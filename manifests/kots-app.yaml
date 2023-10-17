@@ -7,7 +7,7 @@ spec:
   statusInformers:
     - deployment/gitea
   ports:
-    - serviceName: "release-name-gitea"
+    - serviceName: "gitea"
       servicePort: 8888
       localPort: 8888
       applicationUrl: "http://gitea"
