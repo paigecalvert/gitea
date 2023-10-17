@@ -1,0 +1,14 @@
+apiVersion: kots.io/v1beta1
+kind: Application
+metadata:
+  name: gitea
+spec:
+  title: Enterprise GTM Starter
+  statusInformers:
+    - deployment/gitea
+  ports:
+    - serviceName: "gitea"
+      servicePort: 8888
+      localPort: 8888
+      applicationUrl: "http://gitea"
+  icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSa6IpLT8VVWQDXoPuirydW6MC_BfKnuCOZA&usqp=CAU
