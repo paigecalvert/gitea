@@ -8,7 +8,7 @@ spec:
     - deployment/gitea
   ports:
     - serviceName: "gitea"
-      servicePort: 8888
+      servicePort: 80
       localPort: 8888
       applicationUrl: "http://gitea"
   icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSa6IpLT8VVWQDXoPuirydW6MC_BfKnuCOZA&usqp=CAU
